@@ -15,6 +15,7 @@
         let Lottery4 = Math.floor(Math.random() * (10));
         let Lottery5 = Math.floor(Math.random() * (10));
         form_resultLottery.innerText = (`WYLOSOWANO: ${Lottery} - ${Lottery1} - ${Lottery2} - ${Lottery3} - ${Lottery4} - ${Lottery5}`);
+        // TU DODAĆ JESZCZE JEDNĄ ZMIENNA Z SAMYMI CYFRAMI WYLOSOWANYMI I PRZESIAĆ JE PRZEZ PAŻYSTE LUB NIE Parzyste
     };
 
 
@@ -39,6 +40,12 @@
 
 // // zapis prostszy 
 // const isEven = number => number % 2 === 0;
+// const isAnyNumberEven = numbers.some(isEven);
+// const isEveryNumberEven = numbers.every(isEven);
 
+// lub i
 
+// wyciągnięcie minimalenej liczby z listy
+// const numbers = [4, 7, 1, 9, 2, 5]
+// const min = Math.min(...numbers)
 };
