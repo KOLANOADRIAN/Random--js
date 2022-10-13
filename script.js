@@ -8,14 +8,15 @@
 
         const form_resultLottery = document.querySelector(".form_resultLottery--js");
 
-        let Lottery = Math.floor(Math.random() * (10));
-        let Lottery1 = Math.floor(Math.random() * (10));
-        let Lottery2 = Math.floor(Math.random() * (10));
-        let Lottery3 = Math.floor(Math.random() * (10));
-        let Lottery4 = Math.floor(Math.random() * (10));
-        let Lottery5 = Math.floor(Math.random() * (10));
+        const Lottery = Math.floor(Math.random() * (10));
+        const Lottery1 = Math.floor(Math.random() * (10));
+        const Lottery2 = Math.floor(Math.random() * (10));
+        const Lottery3 = Math.floor(Math.random() * (10));
+        const Lottery4 = Math.floor(Math.random() * (10));
+        const Lottery5 = Math.floor(Math.random() * (10));
         form_resultLottery.innerText = (`WYLOSOWANO: ${Lottery} - ${Lottery1} - ${Lottery2} - ${Lottery3} - ${Lottery4} - ${Lottery5}`);
         // TU DODAĆ JESZCZE JEDNĄ ZMIENNA Z SAMYMI CYFRAMI WYLOSOWANYMI I PRZESIAĆ JE PRZEZ PAŻYSTE LUB NIE Parzyste
+
     };
 
 
@@ -26,6 +27,13 @@
         powitanie();
     };
     init();
+
+
+
+    const container_span = document.querySelector(".container_span ")
+    console.log(container_span)
+       
+    
 //    pomysł na puźniej
 // funkcja sprawdza czy liczba jest parzysta
 // 07.04  min 22
