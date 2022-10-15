@@ -33,9 +33,10 @@
     0% {margin-left: 100px;}
     30% {margin-bottom: 360px;}
     50% {margin-left: 170px;}
-    /* 50% {bottom: 70px;}
-    100% {left: 170px;} */ 
-
-
+    100% {margin-left: 100px;}
+   
 }
 
+.container_fieldset {
+    height: 300px;
+}

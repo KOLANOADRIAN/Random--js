@@ -23,12 +23,15 @@
 
         const form_resultLottery = document.querySelector(".form_resultLottery--js");
 
-        const Lottery = Math.floor(Math.random() * (10));
-        const Lottery1 = Math.floor(Math.random() * (10));
-        const Lottery2 = Math.floor(Math.random() * (10));
-        const Lottery3 = Math.floor(Math.random() * (10));
-        const Lottery4 = Math.floor(Math.random() * (10));
-        const Lottery5 = Math.floor(Math.random() * (10));
+        const Lottery = Math.floor(Math.random() * (49));
+        const Lottery1 = Math.floor(Math.random() * (49));
+        const Lottery2 = Math.floor(Math.random() * (49));
+        const Lottery3 = Math.floor(Math.random() * (49));
+        const Lottery4 = Math.floor(Math.random() * (49));
+        const Lottery5 = Math.floor(Math.random() * (49));
+
+
+        
         form_resultLottery.innerHTML = (`Twoje cyfry to: 
         ${you_input1} - 
         ${you_input2} - 

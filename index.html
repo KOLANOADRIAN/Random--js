@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <title>RANDOM -- test</title>
     <meta property="og:image" content="./">
@@ -21,29 +21,30 @@
 <body>
     <div class="container">
         <!-- <form class="container__form container__form--js"> -->
-            <fieldset>
-                <legend>WYLOSUJ 6 Cyfr od 1 do 10</legend>
-                <form class="conteiner_form">
-                    <input class="input input1" value="" placeholder="nr">
-                    <input class="input input2" value="" placeholder="nr">
-                    <input class="input input3" value="" placeholder="nr">
-                    <input class="input input4" value="" placeholder="nr">
-                    <input class="input input5" value="" placeholder="nr">
-                    <input class="input input6" value="" placeholder="nr">
-                   
-                </form>
-                <button class="form__button form__button--js">wylosuj</button>
-                <p class="form_resultLottery--js"></p>
-            </fieldset>
-    
-            <span class="container_span">
-                <div  class="bool1"  ></div>
-                <div class="bool2"></div>
-                <div class="bool3"></div>
-                <div class="bool4"></div>
-                <div class="bool5"></div>
-                <div class="bool6"></div>
-            </span>
+        <fieldset class="container_fieldset">
+            <legend>WYLOSUJ 6 Cyfr od 1 do 49</legend>
+            <form class="conteiner_form">
+                <input autofocus required class="input input1" value="" placeholder="nr">
+                    <input required class="input input2" value="" placeholder="nr">
+                    <input required class="input input3" value="" placeholder="nr">
+                    <input required class="input input4" value="" placeholder="nr">
+                    <input required class="input input5" value="" placeholder="nr">
+                    <input required class="input input6" value="" placeholder="nr">
+                    <br>
+                    <button class="form__button form__button--js">wylosuj</button>
+            </form>
+
+            <p class="form_resultLottery--js"></p>
+        </fieldset>
+
+        <span class="container_span">
+            <div class="bool1"></div>
+            <div class="bool2"></div>
+            <div class="bool3"></div>
+            <div class="bool4"></div>
+            <div class="bool5"></div>
+            <div class="bool6"></div>
+        </span>
     </div>
     <footer>&copy; Adrian Kolano 2020.</footer>
 </body>
