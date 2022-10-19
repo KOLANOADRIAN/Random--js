@@ -1,17 +1,16 @@
-
 .container {
     max-width: 1000px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-  
+
 }
 
 .container_span {
     display: block;
-    width: 60%;
-    height: 200px;
-    background-color: antiquewhite;
+    width: 30%;
+    height: 400px;
+    background-color: rgb(233, 229, 224);
 }
 
 .bool1 {
@@ -29,14 +28,83 @@
 
 
 }
+
 @keyframes one {
-    0% {margin-left: 100px;}
-    30% {margin-bottom: 360px;}
-    50% {margin-left: 170px;}
-    100% {margin-left: 100px;}
-   
+    0% {
+        margin-left: 100px;
+    }
+
+    30% {
+        margin-bottom: 60px;
+    }
+
+    50% {
+        margin-left: 170px;
+    }
+
+    100% {
+        margin-left: 100px;
+    }
+
 }
 
+.bool2 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(189, 189, 23);
+    border-radius: 50%;
+    position: relative;
+    animation-name: one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.bool3 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(189, 189, 23);
+    border-radius: 50%;
+    position: relative;
+    animation-name: two;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.bool4 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(189, 189, 23);
+    border-radius: 50%;
+    position: relative;
+    animation-name: tree;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes tree {
+    0% {
+        margin-bottom: 100px;
+    }
+
+    30% {
+        margin-right: 60px;
+    }
+
+    50% {
+        margin-top: 170px;
+    }
+
+    70% {
+        margin-left: 100px;
+    }
+    100% {
+        margin-bottom: 100px;
+    }
+
+}
 .container_fieldset {
     height: 300px;
 }

@@ -21,8 +21,6 @@
         const you_input5 = input5.value;
         const you_input6 = input6.value;
 
-        const form_resultLottery = document.querySelector(".form_resultLottery--js");
-
         const Lottery = Math.floor(Math.random() * (49));
         const Lottery1 = Math.floor(Math.random() * (49));
         const Lottery2 = Math.floor(Math.random() * (49));
@@ -30,8 +28,19 @@
         const Lottery4 = Math.floor(Math.random() * (49));
         const Lottery5 = Math.floor(Math.random() * (49));
 
+        console.log(you_input1)
+        console.log(Lottery)
+        if (you_input1 === Lottery) {
+            console.log("trafiłeś pierwszą cyfrę")
+        } else {
+            console.log("Nie trafiłeś pierwszej cyfrę")
+        }
 
-        
+
+        // you_input1 === Lottery ? console.log("trafiłeś") : console.log("ZONK");
+
+        const form_resultLottery = document.querySelector(".form_resultLottery--js");
+
         form_resultLottery.innerHTML = (`Twoje cyfry to: 
         ${you_input1} - 
         ${you_input2} - 
@@ -48,7 +57,9 @@
         ${Lottery4} - 
         ${Lottery5}`
         );
-        // TU DODAĆ JESZCZE JEDNĄ ZMIENNA Z SAMYMI CYFRAMI WYLOSOWANYMI I PRZESIAĆ JE PRZEZ PAŻYSTE LUB NIE Parzyste
+
+
+      
 
     };
 
@@ -61,13 +72,8 @@
     };
     init();
 
-    // kulki
-    const container_span = document.querySelector(".container_span ")
-    console.log(container_span)
 
-
-    //    pomysł na puźniej
-    // funkcja sprawdza czy liczba jest parzysta
+    
     // 07.04  min 22
     // const numbers = [1, 2, ,5, 7];
 

@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <title>RANDOM -- test</title>
+
     <meta property="og:image" content="./">
     <meta property="og:image" content="./">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
     <link rel="stylesheet" type="text/css" href="./style.css">
     <link rel="stylesheet" type="text/css" href="./container.css">
     <link rel="stylesheet" type="text/css" href="./form.css">
@@ -23,15 +25,15 @@
         <!-- <form class="container__form container__form--js"> -->
         <fieldset class="container_fieldset">
             <legend>WYLOSUJ 6 Cyfr od 1 do 49</legend>
-            <form class="conteiner_form">
-                <input autofocus required class="input input1" value="" placeholder="nr">
-                    <input required class="input input2" value="" placeholder="nr">
-                    <input required class="input input3" value="" placeholder="nr">
-                    <input required class="input input4" value="" placeholder="nr">
-                    <input required class="input input5" value="" placeholder="nr">
-                    <input required class="input input6" value="" placeholder="nr">
-                    <br>
-                    <button class="form__button form__button--js">wylosuj</button>
+            <form class="conteiner_form" required >
+                <input type="number" autofocus required class="input input1" value="" placeholder="0">
+                <input type="number"  required class="input input2" value="" placeholder="0">
+                <input type="number" required class="input input3" value="" placeholder="0">
+                <input type="number" required class="input input4" value="" placeholder="0">
+                <input type="number" required class="input input5" value="" placeholder="0">
+                <input type="number" required class="input input6" value="" placeholder="0">
+                <br>
+                <button class="form__button form__button--js">wylosuj</button>
             </form>
 
             <p class="form_resultLottery--js"></p>
