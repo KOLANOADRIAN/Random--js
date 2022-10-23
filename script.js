@@ -1,12 +1,13 @@
-{
 
+{
     const powitanie = () => {
         console.log(" Hello World :) ");
     };
     // pobieranie danych z input
 
 
-    const wynik = () => {
+    const wynik = (event) => {
+        event.preventDefault();
         const input1 = document.querySelector(".input1");
         const input2 = document.querySelector(".input2");
         const input3 = document.querySelector(".input3");
@@ -37,6 +38,7 @@
         }
 
 
+
         // you_input1 === Lottery ? console.log("trafiłeś") : console.log("ZONK");
 
         const form_resultLottery = document.querySelector(".form_resultLottery--js");
@@ -58,10 +60,16 @@
         ${Lottery5}`
         );
 
+        // const random_lottery = [Lottery, Lottery1, Lottery2, Lottery3, Lottery4, Lottery5]
+        // console.log(random_lottery);
+        // const your_numbers = [you_input1, you_input2, you_input3, you_input4, you_input5, you_input6];
+        // console.log(your_numbers);
 
-      
-
+        // random_lottery.forEach(random_lotter, index) => {
+        //     console.log(`${index}. ${random_lotter}`);
     };
+
+
 
 
     init = () => {
@@ -72,7 +80,7 @@
     };
     init();
 
-
+};
     
     // 07.04  min 22
     // const numbers = [1, 2, ,5, 7];
@@ -94,4 +102,4 @@
     // wyciągnięcie minimalenej liczby z listy
     // const numbers = [4, 7, 1, 9, 2, 5]
     // const min = Math.min(...numbers)
-};
+
